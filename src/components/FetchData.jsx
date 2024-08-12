@@ -53,7 +53,7 @@ function FetchData() {
     ));
   return (
     <div className='container'>
-        <div className='mt-3'>
+        <div className='gi'>
             <h2>Bots Collection</h2>
             <Table headers={botHeaders} rows={botRows}/>
 
