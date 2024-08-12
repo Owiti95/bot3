@@ -1,0 +1,81 @@
+
+.container{
+  background-color: rgb(53, 31, 5);
+}
+/* Container for tables */
+.scroll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+.table-wrapper {
+  flex: 1;
+}
+
+/* Table styling */
+.table {
+  width: 30%;
+  margin: 20px;
+  background-color: #546109; 
+  border: 1px solid #080808fa;
+  border-radius: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border-bottom: 1px solid #270505;
+}
+/*scroll table*/
+.scroll {
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.bots-collection{
+  color: wheat;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 100px;
+}
+.my-army{
+  color: wheat;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 100px;
+}
+button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-x{
+  background-color: rgb(48, 7, 7);
+  color: wheat;
+}
+.btn-x:hover{
+  background-color:rgb(104, 11, 11);
+}
+.btn-x:focus{
+  background-color: red;
+}
+.btn-remove{
+  background-color: rgb(63, 7, 7);
+  color: wheat;
+}
+.btn-remove:hover{
+  background-color:rgb(161, 19, 19);
+}
+.btn-remove:focus{
+  background-color: rgb(235, 31, 31);
+}
