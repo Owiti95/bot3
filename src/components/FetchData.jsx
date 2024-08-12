@@ -9,7 +9,7 @@ function FetchData() {
     const [selectedBots, setSelectedBots] = useState([]);
 
     useEffect(() => {
-        axios.get('https://bot-inky-theta-38.vercel.app/')
+        axios.get('http://localhost:4000/bots')
         .then(res => setData(res.data))
         .catch(err => console.log(err));
     }, []);
@@ -27,7 +27,7 @@ function FetchData() {
     };
 
     const handleDeleteClick = (botId) => {
-        axios.delete(`https://bot-inky-theta-38.vercel.app/${botId}`)
+        axios.delete(`http://localhost:4000/bots/${botId}`)
         .then(() => {
             setData(data.filter(bot => bot.id !== botId));
             setSelectedBots(selectedBots.filter(bot => bot.id !== botId));
@@ -53,18 +53,16 @@ function FetchData() {
     ));
   return (
     <div className='container'>
-        <div>
-            <h2 className='bots-collection'>Bots Collection</h2>
-            <div className='table-container'>
+        <div className='mt-3'>
+            <h2>Bots Collection</h2>
             <Table headers={botHeaders} rows={botRows}/>
 
             {selectedBots.length > 0 && (
-            <div>
-                <h2 className='my-army'>My Army</h2>
+            <div className='mt-5'>
+                <h2>My Army</h2>
                 <Table headers={selectedBotHeaders} rows={selectedBotRows} />
                 </div>
             )}
-            </div>
         </div>
     </div>
   );

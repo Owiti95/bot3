@@ -1,9 +1,14 @@
 
 .container{
   background-color: rgb(53, 31, 5);
+  display: flex;
+  
+}
+.gi{
+  display: flex ;
 }
 /* Container for tables */
-.scroll {
+.flex {
   display: flex;
   flex-wrap: wrap;
   gap: 200px;

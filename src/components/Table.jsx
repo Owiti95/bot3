@@ -2,6 +2,7 @@ import React from 'react';
 
 const Table = ({ headers, rows }) => (
 <div className='scroll'>
+    <div className='flex'>
     <table className='table'>
         <thead>
             <tr>
@@ -11,10 +12,11 @@ const Table = ({ headers, rows }) => (
             </tr>
         </thead>
         <tbody>
-                {rows.length > 0 ? rows : <tr><td>No data</td></tr>}
+                {rows.length > 0 ? rows : <tr><td colSpan={headers.length}>No data</td></tr>}
         </tbody>
     </table>
-</div>    
+    </div>
+</div>
 );
 
 export default Table;
