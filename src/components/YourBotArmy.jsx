@@ -17,7 +17,7 @@ const YourBotArmy = ({bot, onRemoveClick}) => (
             />
         </td>
         <td>
-            <button className='btn-remove' onClick={() => onRemoveClick(bot.id)}>Remove</button>
+            <button className='button' onClick={() => onRemoveClick(bot.id)}>Remove</button>
         </td>
     </tr>
 );

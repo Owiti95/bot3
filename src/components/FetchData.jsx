@@ -53,13 +53,13 @@ function FetchData() {
     ));
   return (
     <div className='container'>
-        <div className='gi'>
-            <h2>Bots Collection</h2>
+        <div className='mt-3'>
+            <h2 className='h2'>Bots Collection</h2>
             <Table headers={botHeaders} rows={botRows}/>
 
             {selectedBots.length > 0 && (
-            <div className='mt-5'>
-                <h2>My Army</h2>
+            <div className='h2'>
+                <h2 className='h2'>My Army</h2>
                 <Table headers={selectedBotHeaders} rows={selectedBotRows} />
                 </div>
             )}

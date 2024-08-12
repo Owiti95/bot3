@@ -17,7 +17,7 @@ const BotRow = ({ bot, onAddClick, onDeleteClick }) => (
     />
     </td>
     <td>
-        <button className='btn-x' onClick={() => onDeleteClick(bot.id)}>X</button>
+        <button className='button' onClick={() => onDeleteClick(bot.id)}>X</button>
     </td>
     </tr>
 );
